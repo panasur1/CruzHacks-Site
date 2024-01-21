@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #adadad;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <h1><a href="index.html">Unity for Hunger</a></h1>
+            </div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="map.html">Map</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">Create an account</a>
+            </div>
+        </nav>
+    </header>
+    <section id="account" class="content">
+        <div>
+            <h2>Please give a review on the establishments you've visited so future users will be able to find a reliable source of food.</h2>
+        </div>
+    </section>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email (optional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType" required>
+            <option value="general">General Feedback</option>
+            <option value="bug">Report a restaurant</option>
+            <option value="feature">Ask questions</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>
